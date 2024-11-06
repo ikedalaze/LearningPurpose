@@ -3,15 +3,15 @@ function toggleText(id, buttonId) {
     const button = document.getElementById(buttonId);
     
     if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "block"; // Show the additional text
-        button.textContent = "Lexo me pak"; // Change button text to "Read Less"
+        moreText.style.display = "block"; 
+        button.textContent = "Lexo me pak"; 
     } else {
-        moreText.style.display = "none"; // Hide the additional text
-        button.textContent = "Lexo me shume"; // Change button text to "Read More"
+        moreText.style.display = "none"; 
+        button.textContent = "Lexo me shume"; 
     }
 }
 
-// Event listeners for buttons
+
 document.getElementById('button-moreText').addEventListener('click', function() {
     toggleText('moreText', 'button-moreText');
 });

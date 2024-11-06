@@ -1,4 +1,4 @@
-// Load cart items on cart page
+
 document.addEventListener("DOMContentLoaded", function () {
     if (window.location.pathname.includes("shporta.html")) {
         loadCartItems();
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Function to load cart items
+
 function loadCartItems() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let cartItemsContainer = document.getElementById("cart-items");
@@ -31,7 +31,7 @@ function loadCartItems() {
     });
 }
 
-// Function to update quantity
+
 function updateQuantity(name, change) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let product = cart.find(item => item.name === name);
@@ -48,7 +48,7 @@ function updateQuantity(name, change) {
     }
 }
 
-// Function to remove an item
+
 function removeItem(name) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart = cart.filter(item => item.name !== name);
@@ -58,7 +58,7 @@ function removeItem(name) {
     updateCartCount();
 }
 
-// Function to update the total price
+
 function updateTotalPrice() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);

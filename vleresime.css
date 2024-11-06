@@ -5,10 +5,10 @@
 }
 
 html, body {
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: hidden; 
     width: 100vw;
     background: radial-gradient(#dfae53, #efb03b);
-    font-family: 'Inter', sans-serif; /* Default for body */
+    font-family: 'Inter', sans-serif; 
 }
 
 .navbar {
@@ -34,71 +34,71 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
-    color: #555; /* Keep the text color for links */
+    color: #555; 
 }
 
 p {
-    color: #555; /* Paragraph color */
-    font-family: 'Gowun Batang', serif; /* Paragraphs */
+    color: #555;
+    font-family: 'Gowun Batang', serif; 
 }
 
 .container {
     max-width: 1300px;
     margin: auto;
-    padding: 0 20px; /* Simplified padding */
+    padding: 0 20px;
 }
 
 h1, h2 {
-    font-family: 'Halant', serif; /* Headings */
-    text-align: center; /* Center align headings */
+    font-family: 'Halant', serif; 
+    text-align: center; 
 }
 
 h3 {
-    font-family: 'Halant', serif; /* Headings for the form */
-    margin-top: 30px; /* Margin above the form */
+    font-family: 'Halant', serif; 
+    margin-top: 30px; 
 }
 h4 {
-    font-family: 'Halant', serif; /* Headings for the form */
-    margin-top: 30px; /* Margin above the form */
+    font-family: 'Halant', serif; 
+    margin-top: 30px; 
 }
 
 .opinions-section {
-    padding: 20px 0; /* Padding for the section */
+    padding: 20px 0; 
 }
 
 .review {
-    background: #f26b0ada; /* Light golden color for reviews */
-    padding: 15px; /* Padding inside review */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 15px; /* Space between reviews */
-    text-align: left; /* Left align text */
-    transition: box-shadow 0.2s ease; /* Smooth transition for shadow */
+    background: #f26b0ada; 
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 15px; 
+    text-align: left; 
+    transition: box-shadow 0.2s ease; 
 }
 
-/* Hover effect for reviews */
+
 .review:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .submission-form {
-    background: #efb03b; /* Matching background for the form */
-    padding: 20px; /* Padding around the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: #efb03b; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Rregullimet e tjera CSS... */
+
 
 .submission-form input,
 .submission-form textarea {
-    width: 100%; /* Full width for inputs */
-    padding: 10px; /* Padding inside the inputs */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #555; /* Darker border color for visibility */
-    background-color: transparent; /* Transparent background */
-    color: #333; /* Dark text color for better visibility */
-    margin-bottom: 10px; /* Space between inputs */
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #555; 
+    background-color: transparent; 
+    color: #333; 
+    margin-bottom: 10px; 
 }
 
 .btn-custom {
@@ -106,49 +106,63 @@ h4 {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 12px 24px;
-    background-color: #ff523b; /* Orange color */
-    color: white; /* White text */
+    background-color: #ff523b; 
+    color: white; 
     text-align: center;
-    text-decoration: none; /* Remove underline */
-    border: none; /* Remove default border */
-    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; 
+    border: none; 
+    border-radius: 30px; 
     font-size: 16px;
-    transition: background 0.5s, transform 0.2s; /* Smooth transition */
-    cursor: pointer; /* Change cursor on hover */
+    transition: background 0.5s, transform 0.2s; 
+    cursor: pointer; 
 }
 
-/* Hover effect for the button */
+
 .btn-custom:hover {
-    background: #563434; /* Darker color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background: #563434; 
+    transform: scale(1.05); 
 }
 
 .btn-submit:hover {
-    background: #c45a00; /* Ngjyrë më e errët për hover */
+    background: #c45a00; 
 }
 
-/* Rregullimet e tjera CSS... */
+.error-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    display: none; 
+    text-align: center;
+}
+
+
+
+
 .footer {
-    background-color: #f26b0ada; /* Dark background color */
-    color: white; /* White text color */
-    padding: 20px 0; /* Padding for top and bottom */
+    background-color: #f26b0ada; 
+    color: white; 
+    padding: 20px 0; 
 }
 
 .footer p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .footer .social-media {
-    margin-top: 0; /* No extra space on top */
+    margin-top: 0; 
 }
 
 .footer .social-icon {
-    color: white; /* Icon color */
-    margin-left: 10px; /* Space between icons */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Icon size */
+    color: white; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    font-size: 20px; 
 }
 
 .footer .social-icon:hover {
-    color: #ff523b; /* Change color on hover */
+    color: #ff523b; 
 }

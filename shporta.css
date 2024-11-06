@@ -1,6 +1,4 @@
-/* Cart Page Styles */
 
-/* General Page Layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,7 +20,7 @@ h3 {
     margin-top: 20px;
 }
 
-/* Cart Table */
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -50,7 +48,7 @@ h3 {
     background-color: #f1f1f1;
 }
 
-/* Quantity and Remove Buttons */
+
 button {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
@@ -69,18 +67,18 @@ button:active {
     background-color: #ddd;
 }
 
-/* Total Price Styling */
+
 #total-price {
     font-size: 1.5em;
     color: #555;
     font-weight: bold;
 }
 
-/* Checkout Button */
+
 #checkout-btn {
     display: block;
     margin: 20px auto;
-    background-color: #f26b0ada; /* Set this to the color of other buttons on your site */
+    background-color: #f26b0ada; 
     color: rgb(235, 220, 220);
     padding: 10px 20px;
     font-size: 16px;
@@ -91,10 +89,10 @@ button:active {
 }
 
 #checkout-btn:hover {
-    background-color: #f89100d8; /* Adjust hover color to match other button hover states */
+    background-color: #f89100d8; 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     h3 {
         text-align: center;
@@ -112,44 +110,43 @@ button:active {
     }
 }
 
-/* Footer Styles */
+
 .footer {
-    background-color: #f26b0ada; /* Same background color as other pages */
-    color: white; /* Text color for footer */
-    padding: 30px; /* Padding for spacing */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center items vertically */
-    position: relative; /* Relative position for footer */
-    bottom: 0; /* Keep it at the bottom */
-    width: 100%; /* Full width */
+    background-color: #f26b0ada; 
+    color: white; 
+    padding: 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
 }
 
-/* Social Media Icons in Footer */
+
 .footer .social-media {
-    display: flex; /* Flexbox for social media icons */
-    gap: 15px; /* Space between icons */
+    display: flex; 
+    gap: 15px; 
 }
 
 .footer .social-media a {
-    color: white; /* Color of icons */
-    font-size: 20px; /* Size of icons */
-    text-decoration: none; /* No underline on links */
-    transition: color 0.3s; /* Transition for hover effect */
+    color: white; 
+    font-size: 20px; 
+    text-decoration: none; 
+    transition: color 0.3s; 
 }
 
 .footer .social-media a:hover {
-    color: #ddd; /* Change color on hover */
+    color: #ddd; 
 }
 
-/* Ensuring Footer Sticks to Bottom */
+
 html, body {
-    height: 100%; /* Ensure full height */
-    margin: 0; /* Remove default margins */
+    height: 100%; 
+    margin: 0; 
 }
 
 .container {
-    min-height: calc(100vh - 60px); /* Adjust based on the height of your footer */
-    /* This ensures the content area expands enough to push the footer down */
+    min-height: calc(100vh - 60px); 
 }
 

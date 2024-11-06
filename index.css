@@ -7,7 +7,6 @@
     --font-heading: 'Halant', serif;
 }
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ html, body {
     font-family: var(--font-body); /* Default for body */
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     align-items: center;
@@ -36,7 +34,7 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
-    margin: 0; /* Reset margin */
+    margin: 0; 
 }
 
 nav ul li {
@@ -47,39 +45,37 @@ nav ul li {
 nav ul a {
     text-decoration: none;
     color: var(--text-color);
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s; 
 }
 
 nav ul a:hover {
-    color: var(--primary-color); /* Change color on hover */
+    color: var(--primary-color); 
 }
 
-/* Paragraph Styles */
 p {
     color: var(--text-color);
-    font-family: 'Gowun Batang', serif; /* Paragraphs */
+    font-family: 'Gowun Batang', serif; 
 }
 
-/* Container Styles */
 .container {
     max-width: 1300px;
     margin: auto;
-    padding: 0 20px; /* Simplified padding */
+    padding: 0 20px; 
 }
 
-/* Carousel Styles */
+
 .carousel-inner {
-    width: 100%; /* Full width on larger screens */
-    height: 500px; /* Set desired carousel height */
-    margin: auto; /* Center the carousel */
+    width: 100%; 
+    height: 500px; 
+    margin: auto; 
 }
 
-/* Headings */
+
 h1 {
-    font-family: var(--font-heading); /* Headings */
+    font-family: var(--font-heading); 
 }
 
-/* Row and Column Styles */
+
 .row {
     display: flex;
     align-items: center;
@@ -88,13 +84,13 @@ h1 {
 }
 
 .col-2 {
-    flex-basis: 50%; /* Adjust for two columns */
+    flex-basis: 50%; 
     min-width: 300px;
 }
 
 .col-2 img {
-    max-width: 80%; /* Adjust the image width */
-    height: auto; /* Ensure the image scales proportionally */
+    max-width: 80%; 
+    height: auto; 
     padding: 50px 0;
 }
 
@@ -106,14 +102,14 @@ a.btn-custom, button.btn-custom {
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 30px; /* Rounded corners */
-    border: none; /* Remove default border */
+    border-radius: 30px; 
+    border: none; 
     font-size: 16px;
     transition: background-color 0.5s;
 }
 
 .btn-custom:hover {
-    background: var(--secondary-color); /* Change background color on hover */
+    background: var(--secondary-color); 
 }
 
 /* Margin Adjustments */
@@ -123,43 +119,43 @@ a.btn-custom, button.btn-custom {
 
 /* Footer Styles */
 .footer {
-    background-color: #f26b0ada; /* Dark background color */
-    color:  white; /* White text color */
-    padding: 20px 0; /* Padding for top and bottom */
+    background-color: #f26b0ada;
+    color:  white; 
+    padding: 20px 0; 
     margin-top: 30px;
 }
 
 .footer p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .footer .social-media {
-    margin-top: 0; /* No extra space on top */
+    margin-top: 0; 
 }
 
 .footer .social-icon {
-    color:white; /* Icon color */
-    margin-left: 10px; /* Space between icons */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Icon size */
+    color:white; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    font-size: 20px; 
 }
 
 .footer .social-icon:hover {
-    color: var(--primary-color); /* Change color on hover */
+    color: var(--primary-color); 
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .col-2 {
-        flex-basis: 100%; /* Make each column 100% width on smaller screens */
-        text-align: center; /* Center-align text and image */
+        flex-basis: 100%; 
+        text-align: center; 
     }
 
     .carousel-inner {
-        height: auto; /* Auto height for responsive behavior */
+        height: auto; 
     }
 
     nav ul.show {
-        display: flex; /* Show the menu when 'show' class is added */
+        display: flex; 
     }
 }
