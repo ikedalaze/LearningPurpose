@@ -1,0 +1,155 @@
+/* Cart Page Styles */
+
+/* General Page Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Gowun Batang', serif;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Cart Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Halant', serif;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.table tbody td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Quantity and Remove Buttons */
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #e9ecef;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+/* Total Price Styling */
+#total-price {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Checkout Button */
+#checkout-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #f26b0ada; /* Set this to the color of other buttons on your site */
+    color: rgb(235, 220, 220);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #f89100d8; /* Adjust hover color to match other button hover states */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        font-size: 14px;
+    }
+
+    #checkout-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f26b0ada; /* Same background color as other pages */
+    color: white; /* Text color for footer */
+    padding: 30px; /* Padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Relative position for footer */
+    bottom: 0; /* Keep it at the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Social Media Icons in Footer */
+.footer .social-media {
+    display: flex; /* Flexbox for social media icons */
+    gap: 15px; /* Space between icons */
+}
+
+.footer .social-media a {
+    color: white; /* Color of icons */
+    font-size: 20px; /* Size of icons */
+    text-decoration: none; /* No underline on links */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer .social-media a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+/* Ensuring Footer Sticks to Bottom */
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margins */
+}
+
+.container {
+    min-height: calc(100vh - 60px); /* Adjust based on the height of your footer */
+    /* This ensures the content area expands enough to push the footer down */
+}
+

@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #ff523b;
+    --secondary-color: #563434;
+    --background-gradient: radial-gradient(#dfae53, #efb03b);
+    --text-color: #555;
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Halant', serif;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    width: 100vw;
+    background: var(--background-gradient);
+    font-family: var(--font-body); /* Default for body */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0; /* Reset margin */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Paragraph Styles */
+p {
+    color: var(--text-color);
+    font-family: 'Gowun Batang', serif; /* Paragraphs */
+}
+
+/* Container Styles */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px; /* Simplified padding */
+}
+
+/* Carousel Styles */
+.carousel-inner {
+    width: 100%; /* Full width on larger screens */
+    height: 500px; /* Set desired carousel height */
+    margin: auto; /* Center the carousel */
+}
+
+/* Headings */
+h1 {
+    font-family: var(--font-heading); /* Headings */
+}
+
+/* Row and Column Styles */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%; /* Adjust for two columns */
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 80%; /* Adjust the image width */
+    height: auto; /* Ensure the image scales proportionally */
+    padding: 50px 0;
+}
+
+/* Button Styles */
+a.btn-custom, button.btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    border: none; /* Remove default border */
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+.btn-custom:hover {
+    background: var(--secondary-color); /* Change background color on hover */
+}
+
+/* Margin Adjustments */
+.row.mt-5 {
+    margin-top: 50px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f26b0ada; /* Dark background color */
+    color:  white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer .social-media {
+    margin-top: 0; /* No extra space on top */
+}
+
+.footer .social-icon {
+    color:white; /* Icon color */
+    margin-left: 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Icon size */
+}
+
+.footer .social-icon:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-2 {
+        flex-basis: 100%; /* Make each column 100% width on smaller screens */
+        text-align: center; /* Center-align text and image */
+    }
+
+    .carousel-inner {
+        height: auto; /* Auto height for responsive behavior */
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when 'show' class is added */
+    }
+}

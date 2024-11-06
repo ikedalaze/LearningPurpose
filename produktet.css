@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    width: 100vw;
+    background: radial-gradient(#dfae53, #efb03b);
+    font-family: 'Inter', sans-serif; /* Default for body */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+    font-family: 'Gowun Batang', serif; /* Paragraphs */
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px; /* Simplified padding */
+}
+
+h1 {
+    font-family: 'Halant', serif; /* Headings */
+}
+
+h4 {
+    font-family: 'Halant', serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#product1 {
+    text-align: center;
+}
+
+/* Flex container for products */
+.pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap if they exceed the row */
+    gap: 15px; /* Space between product cards */
+    margin: 0 40px; /* Add margin to the left and right of the container */
+}
+
+#product1 .pro {
+    flex: 1 1 calc(30% - 15px); /* Ensures 3 products per row */
+    min-width: 260px;
+    padding: 10px;
+    border: 1px solid #f26b0ada;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative; 
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.851);
+}
+
+#product1 .pro:hover {
+    box-shadow: 10px 10px 15px #f26b0ada;
+}
+
+#product1 .pro img {
+    width: 80%; /* Reduced image size */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensures margin auto works */
+    border-radius: 20px; /* Keep border-radius */
+    padding: 10px; /* Add padding inside the border */
+}
+
+#product .pro .des {
+    text-align: start;
+    padding: 10px;
+}
+
+#product .pro .des span {
+    font-size: 12px;
+}
+
+#product .pro .des span h4 {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#product .pro .des i {
+    color: #ff523b;
+    font-size: 12px;
+}
+
+#product1 .pro .cart {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    line-height: 40px; /* To vertically center content */
+    position: absolute; /* Add absolute positioning */
+    bottom: 20px; /* Align near the bottom */
+    right: 10px; /* Align to the right */
+    color: white; /* Example text color */
+    text-align: center; /* Center the text horizontally */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 20px; /* Adjust font size */
+}
+
+.footer {
+    background-color: #f26b0ada; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer .social-media {
+    margin-top: 0; /* No extra space on top */
+}
+
+.footer .social-icon {
+    color: white; /* Icon color */
+    margin-left: 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Icon size */
+}
+
+.footer .social-icon:hover {
+    color: #ff523b; /* Change color on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) {
+    #product1 .pro {
+        flex: 1 1 calc(50% - 15px); /* 2 products per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #product1 .pro {
+        flex: 1 1 100%; /* 1 product per row on small screens */
+    }
+}
